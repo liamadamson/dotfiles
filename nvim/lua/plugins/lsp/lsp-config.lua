@@ -82,6 +82,10 @@ return {
       function(server_name)
         lspconfig[server_name].setup({
           capabilities = capabilities,
+
+          on_attach = function(client, bufnr)
+            vim.lsp.inlay_hint.enable(true)
+          end
         })
       end,
     })
