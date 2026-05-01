@@ -26,3 +26,4 @@ keymap.set("n", "<leader>bn", "<cmd>bn<CR>", { desc = "Go to next buffer" }) -- 
 keymap.set("n", "<leader>bp", "<cmd>bp<CR>", { desc = "Go to previous buffer" }) -- go to previous buffer
 keymap.set("n", "<leader>bd", "<cmd>bd<CR>", { desc = "Close current buffer" }) -- close current buffer
 
+keymap.set("n", "<leader>f", vim.lsp.buf.format, {})
